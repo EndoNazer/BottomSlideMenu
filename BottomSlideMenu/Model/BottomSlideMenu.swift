@@ -19,16 +19,7 @@ class BottomSlideMenu{
     
     public var currentPosition: PositionOnScreen
     
-    
-    enum State {
-        case expanded
-        case collapsed
-    }
-    
     var visible = false
-    var nextState: State {
-        return bottomSlideMenuVisible ? .collapsed : .expanded
-    }
     
     var visualEffectView: UIVisualEffectView!
     

@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     }
     
     var bottomSlideMenu = BottomSlideMenu(currentPosition: .bottom)
-    var bottomSlideMenuViewController: BottomSlideMenuViewController!
+    var bottomSlideMenuViewController: BottomSlideMenuMediator!
     var visualEffectView: UIVisualEffectView!
     
     var bottomSlideMenuHeight: CGFloat = 0
@@ -49,7 +49,7 @@ class ViewController: UIViewController {
     }
     
     func createAndAddBottomSlideMenuViewController(){
-        bottomSlideMenuViewController = BottomSlideMenuViewController(nibName:"BottomSlideMenuViewController", bundle:nil)
+        bottomSlideMenuViewController = BottomSlideMenuMediator(nibName:"BottomSlideMenuViewController", bundle:nil)
         bottomSlideMenuViewController.bottomSlideMenu = bottomSlideMenu
         self.addChild(bottomSlideMenuViewController)
         self.view.addSubview(bottomSlideMenuViewController.view)
