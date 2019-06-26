@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardViewController" customModule="BottomSlideMenu" customModuleProvider="target">
+            <connections>
+                <outlet property="handleArea" destination="r6F-YW-eeF" id="1Y4-Bw-5yT"/>
+                <outlet property="searchField" destination="IYd-v4-qJB" id="8Ng-Gn-EUF"/>
+                <outlet property="view" destination="iN0-l3-epB" id="DJP-sT-hnF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="490"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qZN-Of-IAe">
+                    <rect key="frame" x="0.0" y="60" width="375" height="430"/>
+                    <color key="backgroundColor" white="0.90000000000000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r6F-YW-eeF">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search..." textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="IYd-v4-qJB">
+                            <rect key="frame" x="20" y="15" width="335" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zN9-ao-xDz">
+                            <rect key="frame" x="150" y="5" width="75" height="5"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="IYd-v4-qJB" firstAttribute="top" secondItem="r6F-YW-eeF" secondAttribute="top" constant="15" id="Z8d-nP-kMF"/>
+                        <constraint firstItem="zN9-ao-xDz" firstAttribute="top" secondItem="r6F-YW-eeF" secondAttribute="top" constant="5" id="dLl-pK-Rcp"/>
+                        <constraint firstItem="IYd-v4-qJB" firstAttribute="leading" secondItem="r6F-YW-eeF" secondAttribute="leading" constant="20" id="gt1-c2-cwC"/>
+                        <constraint firstItem="IYd-v4-qJB" firstAttribute="top" secondItem="zN9-ao-xDz" secondAttribute="bottom" constant="5" id="lOT-R0-Yyx"/>
+                        <constraint firstItem="zN9-ao-xDz" firstAttribute="centerX" secondItem="r6F-YW-eeF" secondAttribute="centerX" id="qLq-Dn-8Of"/>
+                        <constraint firstAttribute="trailing" secondItem="IYd-v4-qJB" secondAttribute="trailing" constant="20" id="wax-HC-aZA"/>
+                        <constraint firstAttribute="bottom" secondItem="IYd-v4-qJB" secondAttribute="bottom" constant="15" id="x0f-YU-eWi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qZN-Of-IAe" secondAttribute="trailing" id="7gy-Li-Cac"/>
+                <constraint firstAttribute="trailing" secondItem="r6F-YW-eeF" secondAttribute="trailing" id="801-46-Vpo"/>
+                <constraint firstItem="zN9-ao-xDz" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.2" id="G3u-W2-Zl7"/>
+                <constraint firstItem="qZN-Of-IAe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Ufp-Gr-6hp"/>
+                <constraint firstItem="qZN-Of-IAe" firstAttribute="top" secondItem="r6F-YW-eeF" secondAttribute="bottom" id="W0h-Ma-A9o"/>
+                <constraint firstItem="r6F-YW-eeF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="XMN-g5-QX4"/>
+                <constraint firstAttribute="bottom" secondItem="qZN-Of-IAe" secondAttribute="bottom" id="Z3C-BQ-hvr"/>
+                <constraint firstItem="r6F-YW-eeF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="pZ1-IC-o7H"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="130.40000000000001" y="73.763118440779621"/>
+        </view>
+    </objects>
+</document>
